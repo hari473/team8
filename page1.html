@@ -7,8 +7,16 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <video autoplay muted loop id="background-video">
+        <source src="bg.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <div id="overlay"></div> <!-- Transparent black overlay -->
+
+
     <div class="container">
-        <h1>Speech-to-Text Translator</h1>
+        <img src="logo.png" alt="Logo" id="logo">
+        <h1>'Speech-to-Text System'</h1>
         <div>
             <label for="language">Select Language:</label>
             <select id="language">
@@ -22,7 +30,7 @@
         <button id="start-btn">Start Speech Recognition</button>
         <p id="status">Click "Start Speech Recognition" to begin.</p>
         <p><strong>Recognized Text:</strong> <span id="recognized-text"></span></p>
-        <p><strong>Translated Text:</strong> <span id="translated-text"></span></p>
+        <p><strong>Converted Text:</strong> <span id="translated-text"></span></p>
     </div>
 
     <script src="script.js"></script>
